@@ -8,12 +8,22 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{80A7C49B-9E8C-4013-93F6-2965943C292F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagnostyka.WebAPI", "src\WebAPI\Diagnostyka.WebAPI.csproj", "{93D6077F-98F9-4CE6-99D4-D161732505A4}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2211D2BE-F99B-4630-836E-C0096994744B} = {2211D2BE-F99B-4630-836E-C0096994744B}
+		{3631809B-55FF-4DF4-811F-B465F13CE427} = {3631809B-55FF-4DF4-811F-B465F13CE427}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostyka.Application", "src\Diagnostyka.Application\Diagnostyka.Application.csproj", "{2211D2BE-F99B-4630-836E-C0096994744B}"
+	ProjectSection(ProjectDependencies) = postProject
+		{7744F48E-8442-4EDA-BB63-F1AFDF42B358} = {7744F48E-8442-4EDA-BB63-F1AFDF42B358}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostyka.Domain", "src\Diagnostyka.Domain\Diagnostyka.Domain.csproj", "{7744F48E-8442-4EDA-BB63-F1AFDF42B358}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostyka.Infrastructure", "src\Diagnostyka.Infrastructure\Diagnostyka.Infrastructure.csproj", "{3631809B-55FF-4DF4-811F-B465F13CE427}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2211D2BE-F99B-4630-836E-C0096994744B} = {2211D2BE-F99B-4630-836E-C0096994744B}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostyka.Application.UnitTests", "tests\Diagnostyka.Application.UnitTests\Diagnostyka.Application.UnitTests.csproj", "{64ACA839-30D0-4193-B5A0-AE44657F8842}"
 EndProject
