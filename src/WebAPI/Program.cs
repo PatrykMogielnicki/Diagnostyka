@@ -21,6 +21,7 @@ namespace Diagnostyka.WebAPI
             string dbFile = Path.Combine(Environment.CurrentDirectory, "Diagnostyka.db");
             builder.Services.AddDbContextFactory<DiagnostykaDbContext>(opt => opt.UseSqlite($"Data Source={dbFile}"));
 
+            builder.Services.AddApplicationServices();
             builder.Services.AddInfrastructureServices();
             var app = builder.Build();
 
