@@ -13,21 +13,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagnostyka.WebAPI", "src\W
 		{3631809B-55FF-4DF4-811F-B465F13CE427} = {3631809B-55FF-4DF4-811F-B465F13CE427}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostyka.Application", "src\Diagnostyka.Application\Diagnostyka.Application.csproj", "{2211D2BE-F99B-4630-836E-C0096994744B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagnostyka.Application", "src\Diagnostyka.Application\Diagnostyka.Application.csproj", "{2211D2BE-F99B-4630-836E-C0096994744B}"
 	ProjectSection(ProjectDependencies) = postProject
 		{7744F48E-8442-4EDA-BB63-F1AFDF42B358} = {7744F48E-8442-4EDA-BB63-F1AFDF42B358}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostyka.Domain", "src\Diagnostyka.Domain\Diagnostyka.Domain.csproj", "{7744F48E-8442-4EDA-BB63-F1AFDF42B358}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagnostyka.Domain", "src\Diagnostyka.Domain\Diagnostyka.Domain.csproj", "{7744F48E-8442-4EDA-BB63-F1AFDF42B358}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostyka.Infrastructure", "src\Diagnostyka.Infrastructure\Diagnostyka.Infrastructure.csproj", "{3631809B-55FF-4DF4-811F-B465F13CE427}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagnostyka.Infrastructure", "src\Diagnostyka.Infrastructure\Diagnostyka.Infrastructure.csproj", "{3631809B-55FF-4DF4-811F-B465F13CE427}"
 	ProjectSection(ProjectDependencies) = postProject
 		{2211D2BE-F99B-4630-836E-C0096994744B} = {2211D2BE-F99B-4630-836E-C0096994744B}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostyka.Application.UnitTests", "tests\Diagnostyka.Application.UnitTests\Diagnostyka.Application.UnitTests.csproj", "{64ACA839-30D0-4193-B5A0-AE44657F8842}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Diagnostyka.Application.IntegrationTests", "tests\Diagnostyka.Application.IntegrationTests\Diagnostyka.Application.IntegrationTests.csproj", "{DE18E994-451D-41A4-87F6-42F99B08FEF0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Diagnostyka.UnitTests", "tests\Diagnostyka.Application.UnitTests\Diagnostyka.UnitTests.csproj", "{64ACA839-30D0-4193-B5A0-AE44657F8842}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -55,10 +53,6 @@ Global
 		{64ACA839-30D0-4193-B5A0-AE44657F8842}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{64ACA839-30D0-4193-B5A0-AE44657F8842}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{64ACA839-30D0-4193-B5A0-AE44657F8842}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DE18E994-451D-41A4-87F6-42F99B08FEF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE18E994-451D-41A4-87F6-42F99B08FEF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE18E994-451D-41A4-87F6-42F99B08FEF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE18E994-451D-41A4-87F6-42F99B08FEF0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,7 +63,6 @@ Global
 		{7744F48E-8442-4EDA-BB63-F1AFDF42B358} = {3BD93A1B-9AAF-4E0A-B29D-16BD860A902C}
 		{3631809B-55FF-4DF4-811F-B465F13CE427} = {3BD93A1B-9AAF-4E0A-B29D-16BD860A902C}
 		{64ACA839-30D0-4193-B5A0-AE44657F8842} = {80A7C49B-9E8C-4013-93F6-2965943C292F}
-		{DE18E994-451D-41A4-87F6-42F99B08FEF0} = {80A7C49B-9E8C-4013-93F6-2965943C292F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {BACFB0E4-9607-4272-BAA5-8C8A588128A5}

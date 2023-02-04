@@ -11,9 +11,12 @@ namespace Diagnostyka.Application.Common
 
         public void Deactivate(int id)
         {
-            Kolor kolor = Context.Set<Kolor>().SingleOrDefault(k => k.Id == id);
-            kolor.Active = false;
-            Context.SaveChanges();
+            Kolor? kolor = Context.Set<Kolor>().SingleOrDefault(k => k.Id == id);
+            if(kolor != null)
+            {
+                kolor.Active = false;
+                Context.SaveChanges();
+            }
         }
     }
 }
