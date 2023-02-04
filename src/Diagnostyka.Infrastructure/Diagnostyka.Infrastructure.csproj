@@ -7,7 +7,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Persistance\" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="7.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Diagnostyka.Application\Diagnostyka.Application.csproj" />
+    <ProjectReference Include="..\Diagnostyka.Domain\Diagnostyka.Domain.csproj" />
   </ItemGroup>
 
 </Project>
